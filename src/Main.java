@@ -47,5 +47,28 @@ public class Main {
         }
 
 
+
+        //5
+        int yourGrade;
+        yourGrade = 59;
+
+        if(yourGrade <= 90 && yourGrade >= 100){
+            System.out.println("Grade A");
+        }
+        else if (yourGrade <= 80 && yourGrade >= 89) {
+            System.out.println("Grade B");
+        }
+        else if (yourGrade <= 70 && yourGrade >= 79 ) {
+            System.out.println("Grade C");
+        }
+        else if (yourGrade <= 60 && yourGrade >= 69) {
+            System.out.println("Grade D");
+        }
+        else {
+            System.out.println("Grade F 'Fail'");
+            System.out.println("Get your grades up SMH!");
+        }
+
+
     }
 }
