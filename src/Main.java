@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -49,24 +51,32 @@ public class Main {
 
 
         //5
+        Scanner input = new Scanner(System.in);
         int yourGrade;
-        yourGrade = 59;
 
-        if(yourGrade <= 90 && yourGrade >= 100){
+        System.out.println("Enter your grade to get your results: ");
+        yourGrade = input.nextInt();
+
+
+        if(yourGrade >= 90 && yourGrade <= 100){
             System.out.println("Grade A");
         }
-        else if (yourGrade <= 80 && yourGrade >= 89) {
+        else if (yourGrade >= 80 && yourGrade <= 89) {
             System.out.println("Grade B");
         }
-        else if (yourGrade <= 70 && yourGrade >= 79 ) {
+        else if (yourGrade >= 70 && yourGrade <= 79 ) {
             System.out.println("Grade C");
         }
-        else if (yourGrade <= 60 && yourGrade >= 69) {
+        else if (yourGrade >= 60 && yourGrade <= 69) {
             System.out.println("Grade D");
         }
-        else {
+        else if(yourGrade <= 60 && yourGrade >= 1){
             System.out.println("Grade F 'Fail'");
             System.out.println("Get your grades up SMH!");
+        }
+
+        else{
+            System.out.println("Score out of range");
         }
 
 
