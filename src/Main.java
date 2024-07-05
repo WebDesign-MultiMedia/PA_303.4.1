@@ -51,10 +51,12 @@ public class Main {
 
 
         //5
+
+        System.out.println("Part 5: Grade Score: ");
         Scanner input = new Scanner(System.in);
         int yourGrade;
 
-        System.out.println("Enter your grade to get your results: ");
+        System.out.println(" Enter your grade to get your results: ");
         yourGrade = input.nextInt();
 
 
@@ -79,6 +81,40 @@ public class Main {
             System.out.println("Score out of range");
         }
 
+
+
+
+        // 6
+        Scanner sc = new Scanner(System.in);
+        int y;
+        y = sc.nextInt();
+
+        switch (y){
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednsday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Out of range");
+                break;
+        }
 
     }
 }
